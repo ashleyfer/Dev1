@@ -12,7 +12,7 @@ Test Steps:	   	    launch C:\>broken-hashserve_win.exe in new Command Prompt wi
 Expected Results:  	Application is up and running
 Actual Results:    	Application is up and running
 Test Results:	   	Pass
-Defect:		   
+Defect:		        None
 
 
 TC#2
@@ -30,7 +30,7 @@ Actual Results:    	Application is up and running
 	           	    {"TotalRequests":0,"AverageTime":0} 
 			
 Test Results:	   	Pass
-Defect:	
+Defect:	            None
 
 TC#3 
 TC Name: 		    Checking hash request and validate password using computed SHA512 hash
@@ -80,7 +80,7 @@ Actual Results:    	Application is up and running
 			        {"TotalRequests":6,"AverageTime":0}" 
 
 Test Results:	   	Pass
-Defect:	
+Defect:	            None
 
 TC#5
 TC Name: 		    Check correct calculation of AverageTime response parameter
@@ -121,7 +121,7 @@ Actual Results:    	Application is up and running
 			        POST requests executed with Malformed Input messages
 
 Test Results:	   	Pass
-Defect:	
+Defect:	            None
 
 TC#7
 TC Name: 		    Check  base64 encoded password
@@ -175,7 +175,7 @@ Actual Results:    	Application is up and running
 			        Malformed Input message appears
 			        Application shutdown properly
 
-Test Results:	   	Pass
+Test Results:	   	Fail
 Defect:			    curl -X POST -d ‘shutdown’ http://127.0.0.1:8088/hash is invalid
 
 
@@ -193,4 +193,4 @@ Actual Results:    	Make sure the following message appears: C:\Users\shley>curl
 			curl: (7) Failed to connect to 127.0.0.1 port 8088: Connection refused"	
 
 Test Results:	   	Pass
-Defect:			
+Defect:			    None
