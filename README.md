@@ -150,7 +150,7 @@ Test Steps:		    launch C:\>broken-hashserve_win.exe in new Command Prompt windo
 			        Open second Command Prompt window and execute: C:\>curl -X POST -H ""application/json"" -d '{""password"":""angrymonkey""}' http://127.0.0.1:8088/hash 
 			        Execute the following: curl -X POST -d ‘shutdown’ http://127.0.0.1:8088/hash
 
-Expected Results:  	Application should be stopped 
+Expected Results:  	Application should be stopped  
 
 Actual Results:    	Application is up and running 
 			        Malformed Input message appears
